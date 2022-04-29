@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import  './Header.css'
 
 
@@ -8,13 +9,13 @@ const Header = () => {
         <div className ='header'>
             <Navbar  className='header' bg="white" expand="lg">
   <Container  className='header'>
-    <Navbar.Brand  className='header' href="#home">
+    <Navbar.Brand  className='header'  as={Link} to="home">
     
         Go-Grocery</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link as={Link} to="home">Home</Nav.Link>
         <Nav.Link href="#link">Items</Nav.Link>
         <Nav.Link href="#">Blogs</Nav.Link>
         <Nav.Link href="#">Contact</Nav.Link>
