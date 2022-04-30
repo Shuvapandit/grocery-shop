@@ -4,9 +4,9 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div>
-            <div className='container mt-6   '>
+            <div className='container mt-6  mb-5 '>
   <div className='row mt-5 gy-6 '>
-      <h3 className='mt-5 mb-4 clr'>AskMe Anything?</h3>
+      <h3 className='mt-5 mb-5 clr'>AskMe Anything?</h3>
     <div className='col shadow p-3 mb-5 bg-body border border-5 rounded  '>
       <p className='h6'>Q1) Difference between javascript and nodejs? </p>
       <p className='txt'>Ans:JavaScript is a simple programming language that runs in any browser JavaScript Engine. Whereas Node JS is an interpreter or running environment for a JavaScript programming language that holds many excesses, it requires libraries that can easily be accessed from JavaScript programming for better use.</p>
