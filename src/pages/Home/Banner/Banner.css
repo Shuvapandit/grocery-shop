@@ -1,7 +1,16 @@
 .mrgn{
-    margin-top: -300px;
+    margin-top: -380px;
+    margin-left: 600px;
     color:black;
+    
 }
 .bttn{
     background-color: rgba(154, 233, 36, 0.976);
+}
+.hgwit img{
+    height: 500px;
+    width: 100%;
+}
+.spnc{
+    color: rgba(154, 233, 36, 0.976);;
 }
