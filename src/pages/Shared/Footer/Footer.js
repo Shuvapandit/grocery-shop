@@ -4,14 +4,14 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className='bgclr pt-5'>
-            <div className="container container-fluid ">
+            <div className="container container-fluid  ">
   <div className="row">
     <div className="col">
       <h3 className='text-start '>Go-Grocery</h3>
       <p className='text-start'>We offers high-quality foods and the best delivery service, and the food market you can blindly trust</p>
    
     </div>
-    <div className="col text-start">
+    <div className="col text-start gx-5">
       <h4>Contact Us</h4>
       
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">

@@ -7,9 +7,9 @@ import  './Header.css'
 const Header = () => {
     return (
         <div className ='header'>
-            <Navbar fixed="top" className='header' bg="white" expand="lg">
-  <Container  className='header'>
-    <Navbar.Brand  className='header'  as={Link} to="home">
+            <Navbar fixed="top" className='' bg='white'  expand="lg">
+  <Container  className=''>
+    <Navbar.Brand  className=''  as={Link} to="home">
     
         Go-Grocery</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -17,7 +17,7 @@ const Header = () => {
       <Nav className="me-auto">
         <Nav.Link as={Link} to="home">Home</Nav.Link>
         <Nav.Link href="#link">Items</Nav.Link>
-        <Nav.Link href="#">Blogs</Nav.Link>
+        <Nav.Link as={Link} to="blog">Blogs</Nav.Link>
         <Nav.Link href="#">Contact</Nav.Link>
        
       </Nav>
