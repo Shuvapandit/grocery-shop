@@ -6,7 +6,10 @@ import  './Header.css'
 
 const Header = () => {
     return (
-        <div className ='header'>
+        <div>
+          <nav className=''>
+
+          
             <Navbar bg="dark" variant="dark" fixed="top" className=''  expand="lg">
   <Container  className=''>
     <Navbar.Brand  className=''  as={Link} to="home">
@@ -16,7 +19,8 @@ const Header = () => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link as={Link} to="home">Home</Nav.Link>
-        <Nav.Link as={Link} to="items">Items</Nav.Link>
+        <Nav.Link href="home#items">Items</Nav.Link>
+        
         <Nav.Link as={Link} to="blog">Blogs</Nav.Link>
         <Nav.Link as={Link} to="contact">Contact</Nav.Link>
        
@@ -29,8 +33,8 @@ const Header = () => {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-            
-        </div>
+</nav>   
+</div> 
     );
 };
 

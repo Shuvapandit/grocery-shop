@@ -1,0 +1,70 @@
+[
+    {
+     
+      "id": "1",
+      "name": "Rice",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UD0rkzq2ND6Iu-cO9G2Ggo95lhd3_yz39Q&usqp=CAU",
+      "price":5,
+      "Shortdescription":"Rice's high-fiber make up is essential for reducing constipation  the digestive system.",
+      "quantity":"25 k.g",
+      "suppliername":"ACI Group"
+      
+      
+      
+    },
+    {
+        "id": "2",
+        "name": "Onion",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvvJaZ-4aSXQoZcMNs6yKq648k4S0CxrsCmCesLbzLZkUneNna_dVUEyUzprQdxliDk_E&usqp=CAU",
+        "price":3,
+        "Shortdescription":"Onions contain antioxidants and compounds that fight inflammation, decrease triglycerides and reduce cholesterol levels",
+        "quantity":"100 k.g",
+        "suppliername":"Farmers"
+      
+      
+    },
+    {
+        "id": "3",
+        "name": "chicken",
+        "img": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-182918,resizemode-1,msid-69750320/markets/commodities/news/chicken-to-become-cheaper-as-soya-meal-prices-likely-to-fall.jpg",
+        "price":20,
+        "Shortdescription":"The lean protein in chicken is an excellent source of amino acids that is particularly important as we age. ",
+        "quantity":"2000",
+        "suppliername":"Farmers"
+      
+      
+    },
+    {
+        "id": "4",
+      "name": "Orange",
+      "img": "https://produits.bienmanger.com/33285-0w470h470_Organic_Fresh_Oranges_From_Italy_New_Hall.jpg",
+      "price":50,
+      "Shortdescription":"The vitamin C in oranges helps your body in lots of ways: Protects your cells from damage.",
+      "quantity":"200",
+      "suppliername":"Gerden"
+      
+    },
+    {
+        "id": "5",
+      "name": "Mosor Dal",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTILlMaUoklFREWOSEf9-1Wcp4LmC04ot9sLdb8vuB_jnZcJ2GdzXao-lyp182XzTI3nQ&usqp=CAU",
+      "price":100,
+      "Shortdescription":"Masoor Dal might be good for the heart as it helps to lower cholesterol and blood pressure levels.",
+      "quantity":"50",
+      "suppliername":"Square Group "
+      
+    },
+    {
+        "id": "6",
+      "name": "Broccoli",
+      "img": "https://www.greenmylife.in/wp-content/uploads/2014/09/GMLIMSD018_New.jpg",
+      "price":24,
+      "Shortdescription":" Broccoli also been found to have an impact on the vascular system.",
+      "quantity":"60",
+      "supplier-name":"Farmers"
+      
+    }
+ 
+    
+    
+  ]

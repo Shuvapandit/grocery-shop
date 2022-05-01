@@ -1,0 +1,20 @@
+.item{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hgt img{
+    height: 50px;
+    
+}
+.btnn{
+    margin-left: -200px;
+}
+.tttxd {
+    text-align: justify;
+   word-spacing: -1px;
+}
+
