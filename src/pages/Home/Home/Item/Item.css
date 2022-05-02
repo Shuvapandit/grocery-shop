@@ -12,6 +12,10 @@
 }
 .btnn{
     margin-left: -200px;
+    background-color: rgba(109, 175, 10, 0.893);
+    color: white;
+    border: 5px white solid ;
+    border-radius: 2px;
 }
 .tttxd {
     text-align: justify;

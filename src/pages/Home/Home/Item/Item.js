@@ -20,7 +20,7 @@ const Item = ({item}) => {
                </div>
                </div>
               <div className='p-3'>
-              <button className='btn btn-primary btnn justify-content-start p-2'> StockUpdate </button>
+              <button className='  btnn justify-content-start p-2'> StockUpdate </button>
               </div>
               
            </div> 
