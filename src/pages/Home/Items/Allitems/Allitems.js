@@ -1,54 +1,39 @@
 
 import React, { useEffect, useState } from 'react';
 
+import MAnageAllitems from './ManageAllitems/MAnageAllitems';
 
-
-
-
-
-import Item from '../Home/Item/Item';
-import './Items.css'
-
-const Items = (item) => {
+const Allitems = () => {
     const [items,setitems]=useState([]);
-    
    
     useEffect(()=>{
         fetch('Items.json')
         .then(res=>res.json())
         .then(data=>setitems(data))
     },[])
-   
     return (
         <div id="items"  className='container container-fluid'>
         <div className="row">
         <h1 className=' text-center mt-1 mb-5'>Inventory Items</h1>
         <div className='items-container'>
         {
-            items.map(item => <Item
+            items.map(item => <MAnageAllitems
 
                 key={item.id}
                 item={item}
             >
-            </Item>)
+            </MAnageAllitems>)
          
 
              
             
         }
         </div>
-        
-        </div>
-     
-         
-        <button  className='mb-5 p-2 mib rounded h6'>Manage Inventory</button>
-          
-    
        
-        
+        </div>
+      
     </div>
-        
     );
 };
 
-export default Items;
+export default Allitems;

@@ -4,8 +4,13 @@ import './App.css';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home/Home';
+import Allitems from './pages/Home/Items/Allitems/Allitems';
+
+import ItemDetail from './pages/IteamsDetail/ItemDetail';
 import Login from './pages/Login/Login';
 import Register from './pages/Login/Register/Register';
+
+
 import NotFound from './pages/NotFoundPage/NotFound';
 import Footer from './pages/Shared/Footer/Footer';
 import Blog from './pages/Shared/Header/Blog/Blog';
@@ -19,7 +24,11 @@ function App() {
      <Routes>
      <Route path="/" element={<Home></Home>}></Route>
       <Route path="/home" element={<Home></Home>}></Route>
+      <Route path="/mangeitems" element={<Allitems></Allitems>}></Route>
+      <Route path="/item/:itemId" element={<ItemDetail></ItemDetail>}></Route>
       <Route path="/blog" element={<Blog></Blog>}></Route>
+    
+     
       <Route path="/about" element={<About></About>}></Route>
       <Route path="/contact" element={<Contact></Contact>}></Route>
       <Route path="/login" element={<Login></Login>}></Route>
