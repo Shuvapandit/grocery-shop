@@ -6,11 +6,11 @@ import './Item.css'
 const Item = ({item}) => {
     
     
-        const{id,name,img,price,Shortdescription,quantity,suppliername}=item;
+        const{_id,name,img,price,Shortdescription,quantity,suppliername}=item;
         const navigate = useNavigate();
 
-        const navigateToItemDetail = id =>{
-            navigate(`/item/${id}`);
+        const navigateToItemDetail = _id =>{
+            navigate(`/item/${_id}`);
         }
         return (
             
@@ -33,7 +33,7 @@ const Item = ({item}) => {
 
 
                  
-              <button onClick={() => navigateToItemDetail(id)} className='  btnn justify-content-start rounded p-2'> StockUpdate </button>
+              <button onClick={() => navigateToItemDetail(_id)} className='  btnn justify-content-start rounded p-2'> StockUpdate </button>
               </div>
              
               

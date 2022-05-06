@@ -11,12 +11,12 @@ const Header = () => {
 
           
             <Navbar bg="dark" variant="dark" fixed="top" className=''  expand="lg">
-  <Container  className=''>
-    <Navbar.Brand  className=''  as={Link} to="home">
+           <Container  className=''>
+         <Navbar.Brand  className=''  as={Link} to="home">
     
         Go-Grocery</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
+       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+       <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link as={Link} to="home">Home</Nav.Link>
         <Nav.Link href="home#items">Inventory Items</Nav.Link>
@@ -27,6 +27,7 @@ const Header = () => {
       </Nav>
       <Nav>
       <Nav.Link as={Link} to="about">About Us</Nav.Link>                   
+      <Nav.Link as={Link} to="additems">Add Items</Nav.Link>                   
       <Nav.Link as={Link} to="mangeitems">Manage Items</Nav.Link>                   
       <Nav.Link as={Link} to="login">LogIn</Nav.Link>                   
                         

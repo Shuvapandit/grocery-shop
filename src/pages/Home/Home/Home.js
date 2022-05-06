@@ -9,11 +9,11 @@ import Item from './Item/Item';
 
 const Home = (item) => {
     const [items,setitems]=useState([]);
-    const sliceditems = items.slice(0, 3);
+    const sliceditems = items.slice(0, 20);
 
    
     useEffect(()=>{
-        fetch('Items.json')
+        fetch('http://localhost:5000/item')
         .then(res=>res.json())
         .then(data=>setitems(data))
     },[])
@@ -30,7 +30,7 @@ const Home = (item) => {
         <div className='items-container'>
             {
      
-     sliceditems.map(item=><Item key={item.id}
+     sliceditems.map(item=><Item key={item._id}
       item={item}>
      </Item> )
    }
