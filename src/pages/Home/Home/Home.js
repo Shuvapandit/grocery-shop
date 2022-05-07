@@ -9,7 +9,7 @@ import Item from './Item/Item';
 
 const Home = (item) => {
     const [items,setitems]=useState([]);
-    const sliceditems = items.slice(0, 20);
+    const sliceditems = items.slice(0, 6);
 
    
     useEffect(()=>{
@@ -39,7 +39,9 @@ const Home = (item) => {
            <Link to={'/mangeitems'}>
            <button  className='mb-5 p-2 mib rounded h6'>Manage Inventory</button>
            </Link>
+           
            </div>
+           
         </div>
     );
 };

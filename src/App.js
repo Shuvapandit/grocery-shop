@@ -5,7 +5,7 @@ import About from './pages/About/About';
 import Additem from './pages/Additem/Additem';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home/Home';
-import Allitems from './pages/Home/Items/Allitems/Allitems';
+
 
 import ItemDetail from './pages/IteamsDetail/ItemDetail';
 import Login from './pages/Login/Login';
