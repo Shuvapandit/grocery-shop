@@ -10,6 +10,7 @@ import Home from './pages/Home/Home/Home';
 import ItemDetail from './pages/IteamsDetail/ItemDetail';
 import Login from './pages/Login/Login';
 import Register from './pages/Login/Register/Register';
+import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
 import Manageinventory from './pages/Manageinventory/Manageinventory';
 
 
@@ -26,9 +27,23 @@ function App() {
      <Routes>
      <Route path="/" element={<Home></Home>}></Route>
       <Route path="/home" element={<Home></Home>}></Route>
-      <Route path="/mangeitems" element={<Manageinventory></Manageinventory>}></Route>
-      <Route path="/additems" element={<Additem></Additem>}></Route>
-      <Route path="/item/:itemId" element={<ItemDetail></ItemDetail>}></Route>
+      <Route path="/mangeitems" element={
+        
+          <RequireAuth>
+           <Manageinventory></Manageinventory>
+          </RequireAuth>
+      }></Route>
+      <Route path="/additems" element={
+        <RequireAuth>
+          <Additem></Additem>
+        </RequireAuth>
+      }></Route>
+      <Route path="/item/:itemId" element={
+      <RequireAuth>
+        <ItemDetail></ItemDetail>
+      </RequireAuth>
+
+      }></Route>
       <Route path="/blog" element={<Blog></Blog>}></Route>
     
      
