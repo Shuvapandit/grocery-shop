@@ -10,7 +10,7 @@ const Home = (item) => {
     const [items,setitems]=useState([]);
     const sliceditems = items.slice(0, 6);
     useEffect(()=>{
-        fetch('http://localhost:5000/item')
+        fetch('https://salty-wave-25519.herokuapp.com/item')
         .then(res=>res.json())
         .then(data=>setitems(data))
     },[])

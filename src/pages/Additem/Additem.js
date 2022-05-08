@@ -5,7 +5,7 @@ const Additem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/item`;
+        const url = `https://salty-wave-25519.herokuapp.com/item`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -21,7 +21,7 @@ const Additem = () => {
     return (
         <div className="mb-5">
             <div className="w-50 mx-auto mh  mt-5 mb-5">
-            <h2> Add inventory Items</h2>
+            <h2 className="mt-5"> Add inventory Items</h2>
             
       
           <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
@@ -31,7 +31,7 @@ const Additem = () => {
         <input className='mb-3' placeholder='Price' type="number" {...register("price")} />
          <input className='mb-3' placeholder='Quantity' type="number" {...register("quantity")} />
         <input className='mb-3' placeholder='Photo URL' type="text" {...register("img")} />
-        <input type="submit" value="Add Items" />
+        <input className="btn btn-primary" type="submit" value="Add Items" />
 </form>
 
 </div>

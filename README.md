@@ -1,11 +1,11 @@
 # Go-Grocery Inventory
 
-## Live link of our Project: 
+## Live link of our Project: https://go-grocery-auth.web.app
 
 # About our Project
 ## Project Features and Functionality.
 ## Project Features
-* This is a Grocery Inventory serverside Website.
+* This is a Grocery Inventory clientside Website.
 * Go-Grocery owner can update/delete their products .
 ## Project  Functionalites.
 * We use React as a Library .

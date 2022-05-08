@@ -6,21 +6,22 @@ import React from 'react';
 import './Manageinventory.css'
 import useItems from "../../hooks/useItems";
 
-const Manageinventory = () => {
-    const [mitems,setmitems]=useItems([])
-   
 
-    const handleDelete = id => {
-        const proceed = window.confirm('Are you Sure You want to delete?');
-        if (proceed) {
-            const url=`http://localhost:5000/item/${id}`;
-            fetch(url, {
-                method: "DELETE"
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    const remaining = mitems.filter(mitem => mitem._id !== id);
+
+const Manageinventory = () => {
+    
+const [mitems,setmitems]=useItems([]);
+
+
+const handleDelete = id => {
+ const proceed = window.confirm('Are you Sure You want to delete?');
+ if (proceed) {
+ const url=`https://salty-wave-25519.herokuapp.com/item/${id}`;
+ fetch(url, {
+  method: "DELETE" })
+.then(res => res.json())
+.then(data => {console.log(data);
+const remaining = mitems.filter(mitem => mitem._id !== id);
                     setmitems(remaining);
                    
                 })
@@ -40,6 +41,7 @@ const Manageinventory = () => {
                 <table className="table table-striped ">
                     <thead>
                         <tr>
+                           
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">Quantity</th>
